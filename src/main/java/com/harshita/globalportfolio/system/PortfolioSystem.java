@@ -16,7 +16,7 @@ public class PortfolioSystem {
         this.md = md;
     }
 
-    // UPDATED: now takes homeCurrency
+    //now takes homeCurrency
     public User addUser(String name, Currency homeCurrency) {
         if (users.containsKey(name)) {
             throw new IllegalArgumentException("User already exists: " + name);
